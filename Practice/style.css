@@ -1,0 +1,45 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  padding: 20px 10px;
+  margin: 10px auto;
+  height: 100vh;
+}
+.banner {
+  background-image: url(../images/1772051.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 30px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.text_banner {
+  width: 50%;
+  padding: 20px;
+  font-size: 30px;
+}
+.banner span {
+  margin-bottom: 0px;
+}
+.banner h1 {
+  font-style: bold;
+  font-size: 42px;
+}
+
+.text_banner button {
+  border: none;
+  background-color: brown;
+  border-radius: 20px;
+  color: #fff;
+  padding: 20px 40px;
+}
+
+.text_banner p {
+  font-size: 18px;
+  line-height: 1.5;
+}
