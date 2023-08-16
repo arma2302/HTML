@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      body {
+        background-color: rgb(119, 20, 74);
+        padding: 20px;
+        margin: auto;
+        font-family: sans-serif;
+      }
+      form {
+        background-color: rgb(220, 208, 214);
+        margin: auto;
+        width: 50%;
+        text-align: left;
+        padding: 30px 20px;
+        font-size: 20px;
+        border-radius: 20px;
+        box-shadow: 5px 4px 22px -6px rgb(231, 226, 229);
+      }
+      label {
+        width: 250px;
+        text-align: left;
+        display: inline-block;
+      }
+      input,
+      select,
+      textarea {
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+      button {
+        border: none;
+        border-radius: 12px;
+        background-color: #111;
+        color: #fff;
+        font-size: 18px;
+        text-align: center;
+        /* width: 50%; */
+        margin-top: 30px;
+        padding: 20px 40px;
+        margin-left: 250px;
+      }
+      .form-wrapper
+      {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-wrapper">
+    <form method="post">
+      <label for="name">Name :</label>
+      <input type="text" name="name" id="name" /><br />
+      <label for="email">Email :</label>
+      <input type="text" name="name" id="email" /><br />
+      <label for="pw">Password :</label>
+      <input type="password" name="name" id="pw" /><br />
+      <label for="phone">Phone Number : </label>
+      <input type="number" id="phone" /><br>
+     
+        <label> Gender: </label>
+        <input type="radio" id="gender" name="gender" value="male" /> Male <input type="radio" id="gender" name="gender" value="male" /> Female <input type="radio" id="gender" name="gender" value="male" /> Othe
+        <br />
+     
+        <label for="lang">Language :</label>
+        <select name="lang" id="lang">
+          <option value="select">select language</option>
+          <option value="Hindi">Hindi</option>
+          <option value="Guj">Gujarati</option>
+          <option value="english">English</option>
+        </select><br>
+   
+      <label for="zipcode">Zipcode :</label>
+      <input type="text" name="zipcode" id="zipcode" /><br />
+   
+        <label for="about">About:</label>
+        <input type="text" placeholder="Write About Yourself" id="about" name="about"></input><br />
+   
+      <button>Register Yourself</button>
+    </form>
+    </div>
+  </body>
+</html>
