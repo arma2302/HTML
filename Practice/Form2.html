@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      section {
+        background-image: radial-gradient(circle, rgb(72 118 194 / 39%) 0%, rgba(102, 125, 129, 0.767) 100%), url(../images/fog-dark-clouds-mountains.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 3p8x;
+      }
+      form {
+        /* background-color: #fff; */
+        /* border: 1px solid #111; */
+
+        width: 20%;
+        padding: 40px;
+        /* border-radius: 10px; */
+        color: #fff;
+      }
+      /* form > div {
+        width: 100%;
+      } */
+      .forgot-pw-box {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        align-items: center;
+      }
+      input[type="text"],
+      input[type="password"] {
+        border: none;
+        border-radius: 12px;
+        margin-bottom: 12px;
+        padding: 20px;
+        width: 87%;
+        background-color: #ffffff4f;
+      }
+      ::placeholder {
+        color: #000000cf;
+        font-size: 18px;
+      }
+      /* #rememberMe {
+        display: inline-block;
+        margin: 0;
+        width: 50%;
+      } */
+      .btn {
+        border: none;
+        font-size: 18px;
+      }
+      .btn:hover {
+        color: #fff;
+        background-color: #1111119d;
+        box-shadow: 0px 0px 6px 0px rgba(255, 255, 255, 1);
+      }
+      .sign-in-btn {
+        color: #111;
+        background-color: #ffffffb6;
+        width: 100%;
+        border-radius: 10px;
+        padding: 10px 20px;
+      }
+      .social-btn-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      .social-btn {
+        /* background-color: #f1dea6; */
+        background-color: #ffffffb9;
+        color: #111;
+        border-radius: 10px;
+        padding: 10px 20px;
+        width: 48%;
+      }
+      .sing-in-text {
+        text-align: center;
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <form>
+        <h1>have an account?</h1>
+        <div>
+          <input type="text" placeholder="username" /><br />
+          <input type="password" placeholder="Password" /><br />
+          <button class="btn sign-in-btn">Sign in</button>
+          <div class="forgot-pw-box">
+            <div>
+              <input type="checkbox" id="rememberMe" name="vehicle1" value="Bike" />
+              <label for="rememberMe">Remember Me</label>
+            </div>
+            <p>Forgot Password?</p>
+          </div>
+
+          <p class="sing-in-text">-or Sign In With-</p>
+          <div class="social-btn-wrapper">
+            <button class="btn social-btn">Facebook</button>
+            <button class="btn social-btn">Twitter</button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
